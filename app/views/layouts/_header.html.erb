@@ -4,7 +4,13 @@
     <nav>
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "Discover", posts_path %></li>
-        <li><%= link_to "New Post", new_post_path %></li>
+        
+        <% if logged_in? %>
+          <li><%= link_to "New Post", new_post_path %></li>
+        <% else %>
+          <li><%= link_to "New Post", login_path %></li>
+        <% end %>
+        
         <% if logged_in? %>
           <!--<li><%= link_to "Users", '#' %></li>-->
           <li class="dropdown">
