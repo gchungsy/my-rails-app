@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails',        '4.2.2'
 gem 'bcrypt',       '3.1.7'
+gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'sass-rails',   '>= 3.2'
 gem 'sprockets-rails',   '>= 2.1.4'
