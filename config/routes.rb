@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
   root             'static_page#home'
+<<<<<<< HEAD
   get 'posts'    => 'posts#index'
+=======
+>>>>>>> 46c3798b76ba84da3be1934ecf4ea219405699f3
   get 'help'    => 'static_page#help'
   get 'about'   => 'static_page#about'
   get 'contact' => 'static_page#contact'
@@ -8,7 +11,10 @@ Rails.application.routes.draw do
   get    'login'   => 'sessions#new'
   post   'login'   => 'sessions#create'
   delete 'logout'  => 'sessions#destroy'
+<<<<<<< HEAD
   resources :posts
+=======
+>>>>>>> 46c3798b76ba84da3be1934ecf4ea219405699f3
   resources :users
 end
   # The priority is based upon order of creation: first created -> highest priority.

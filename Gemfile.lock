@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 GIT
   remote: git://github.com/thoughtbot/paperclip.git
   revision: e60f00027704298455c039e111d96bcf46e12822
@@ -9,6 +10,8 @@ GIT
       mime-types
       mimemagic (~> 0.3.0)
 
+=======
+>>>>>>> 46c3798b76ba84da3be1934ecf4ea219405699f3
 GEM
   remote: https://rubygems.org/
   specs:
@@ -62,10 +65,13 @@ GEM
       columnize (~> 0.8)
       debugger-linecache (~> 1.2)
       slop (~> 3.6)
+<<<<<<< HEAD
     climate_control (0.0.3)
       activesupport (>= 3.0)
     cocaine (0.5.8)
       climate_control (>= 0.0.3, < 1.0)
+=======
+>>>>>>> 46c3798b76ba84da3be1934ecf4ea219405699f3
     coderay (1.1.1)
     coffee-rails (4.1.0)
       coffee-script (>= 2.2.0)
@@ -115,7 +121,10 @@ GEM
       mime-types (>= 1.16, < 3)
     method_source (0.8.2)
     mime-types (2.99.1)
+<<<<<<< HEAD
     mimemagic (0.3.1)
+=======
+>>>>>>> 46c3798b76ba84da3be1934ecf4ea219405699f3
     mini_backtrace (0.1.3)
       minitest (> 1.2.0)
       rails (>= 2.3.3)
@@ -229,7 +238,10 @@ DEPENDENCIES
   jquery-rails (= 4.0.3)
   mini_backtrace (= 0.1.3)
   minitest-reporters (~> 1.1)
+<<<<<<< HEAD
   paperclip!
+=======
+>>>>>>> 46c3798b76ba84da3be1934ecf4ea219405699f3
   pg (= 0.17.1)
   puma (= 3.1.0)
   rails (= 4.2.2)

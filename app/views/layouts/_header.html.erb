@@ -3,6 +3,7 @@
     <%= link_to "YAPSA", root_path, id: "logo" %>
     <nav>
       <ul class="nav navbar-nav navbar-right">
+<<<<<<< HEAD
         <li><%= link_to "Discover", posts_path %></li>
         
         <% if logged_in? %>
@@ -11,6 +12,10 @@
           <li><%= link_to "New Post", login_path %></li>
         <% end %>
         
+=======
+        <li><%= link_to "Home", root_path %></li>
+        <li><%= link_to "Help", help_path %></li>
+>>>>>>> 46c3798b76ba84da3be1934ecf4ea219405699f3
         <% if logged_in? %>
           <!--<li><%= link_to "Users", '#' %></li>-->
           <li class="dropdown">
