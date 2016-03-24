@@ -55,4 +55,18 @@ module SessionsHelper
     # prevents storing the forwarding URL if a user, say, submits a form when not logged in (delete cookie)
     session[:forwarding_url] = request.url if request.get? 
   end
+  
+  # Forgets a persistent session.
+  def forget(user)
+    user.forget
+    cookies.delete(:user_id)
+    cookies.delete(:remember_token)
+  end
+
+  # Logs out the current user.
+  def log_out
+    forget(current_user)
+    session.delete(:user_id)
+    @current_user = nil
+  end
 end
