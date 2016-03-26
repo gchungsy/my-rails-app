@@ -1,8 +1,83 @@
-.white {
-  text-align: center;
-  min-width: 250px;
-  min-height: 250px;
-  padding: 5px;
-  display: inline-block; }
+@font-face {
+  font-family: 'Calluna';
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/callunasansregular-webfont.woff") format("woff"); }
+body {
+  background: url(//subtlepatterns.com/patterns/scribble_light.png);
+  font-family: Calluna, Arial, sans-serif;
+  min-height: 1000px;
+  text-align: center; }
+
+#columns {
+  column-width: 320px;
+  column-gap: 15px;
+  width: 100%;
+  max-width: 100%;
+  margin: 30px auto;
+  overflow: auto; }
+
+div#columns figure {
+  background: #fefefe;
+  border: 2px solid #fcfcfc;
+  box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+  margin: 0 2px 15px;
+  padding: 15px;
+  padding-bottom: 10px;
+  transition: opacity .4s ease-in-out;
+  display: inline-block;
+  column-break-inside: avoid; }
+
+div#columns figure img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 15px;
+  margin-bottom: 5px; }
+
+div#columns figure figcaption {
+  font-size: .9rem;
+  color: #444;
+  line-height: 1.5; }
+
+div#columns small {
+  font-size: 1rem;
+  float: right;
+  text-transform: uppercase;
+  color: #aaa; }
+
+div#columns small a {
+  color: #666;
+  text-decoration: none;
+  transition: .4s color; }
+
+div#columns:hover figure:not(:hover) {
+  opacity: 0.4; }
+
+@media screen and (max-width: 750px) {
+  #columns {
+    column-gap: 0px; }
+
+  #columns figure {
+    width: 100%; } }
+.white-panel {
+  background: white;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+  padding: 10px; }
+
+/*
+stylize any heading tags withing white-panel below
+*/
+.white-panel h1 {
+  font-size: 1em; }
+
+.white-panel h1 a {
+  color: #A92733; }
+
+.white-panel:hover {
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  margin-top: -5px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
 
 /*# sourceMappingURL=posts.css.map */

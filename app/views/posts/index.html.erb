@@ -1,8 +1,15 @@
-<% @post.each do |x| %>
-  <div class="white">
-    <%= image_tag x.image.url(:medium) %>
-    <br>
-    <%= x.description %>
-    <br>
+
+<div class="container ">
+  <h2>Discover</h2>
+  <div id="columns">
+    <hr>
+    <% @post.each do |x| %>
+      <div class="white-panel">
+        <%= image_tag x.image.url(:medium) %>
+        <br>
+        <%= x.description %>
+        <br>
+      </div>
+    <% end %>
   </div>
-<% end %>
+</div>
