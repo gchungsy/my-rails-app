@@ -1,4 +1,4 @@
-<div class="center jumbotron">
+<div class="center ">
   <h1>Welcome to YAPSA</h1>
 
   <h2>
@@ -6,13 +6,16 @@
     <%= link_to "Yet Another Photo Sharing", root_path%>
     application.
   </h2>
-
-  <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
+  
+  <p>Power by </p>
+  <%= link_to image_tag("rails.png", alt: "Rails logo"),
+          'http://rubyonrails.org/' %>
+  <br>  <br>  <br>  
+  <%= link_to "View project details on Github.io", signup_path, class: "btn btn-md btn-primary" %>
 </div>
 <div>
   
-  <p>Power by </p>
-<%= link_to image_tag("rails.png", alt: "Rails logo"),
-            'http://rubyonrails.org/' %>
-            
+
+
+</div>
 </div>
